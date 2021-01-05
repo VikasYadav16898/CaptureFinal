@@ -8,8 +8,16 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box
 }
 
+html {
+    @media (max-width: 1700px){
+        font-size: 75%
+    }
+}
+
 body{
-    background: #1b1b1b
+    background: #1b1b1b;
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden
 }
 
 button{
@@ -21,6 +29,7 @@ button{
     background: transparent;
     color: white;
     transition: all 0.5s ease;
+    font-family: 'Inter', sans-serif;
     &:hover{
         background-color: #23d997;
         color: white;
@@ -37,7 +46,7 @@ h2{
     }
     h4{
         font-weight: bold;
-        color: #23d997;
+        font-size: 2rem;
     }
     a{
         font-size: 1.1.rem;
